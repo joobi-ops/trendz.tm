@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TmTrendz - Teen Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TmTrendz</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#trending">Trending</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Express Your Style</h2>
+                <p>Discover the latest teen fashion trends at affordable prices</p>
+                <a href="#categories" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured-categories" id="categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="images/y2k.jpg" alt="Y2K Revival Fashion">
+                <h3>Y2K Revival</h3>
+                <p>Low-rise jeans, crop tops, butterfly clips, and bold colors</p>
+                <a href="#" class="category-btn" data-category="y2k">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/sustainable.jpg" alt="Sustainable Fashion">
+                <h3>Sustainable Fashion</h3>
+                <p>Eco-friendly brands and upcycled clothing options</p>
+                <a href="#" class="category-btn" data-category="sustainable">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/techwear.jpg" alt="Techwear Fashion">
+                <h3>Techwear</h3>
+                <p>Functional design with waterproof fabrics and sleek aesthetics</p>
+                <a href="#" class="category-btn" data-category="techwear">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/oversized.jpg" alt="Oversized Fashion">
+                <h3>Oversized Everything</h3>
+                <p>Baggy jeans, hoodies, and relaxed-fit clothing</p>
+                <a href="#" class="category-btn" data-category="oversized">Explore</a>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="images/bold.jpg" alt="Bold Colors and Patterns">
+                <h3>Bold Colors & Patterns</h3>
+                <p>Neon shades, tie-dye prints, and eye-catching designs</p>
+                <a href="#" class="category-btn" data-category="bold">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/athleisure.jpg" alt="Athleisure Fashion">
+                <h3>Athleisure</h3>
+                <p>Comfortable athletic wear styled for everyday use</p>
+                <a href="#" class="category-btn" data-category="athleisure">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/vintage.jpg" alt="Vintage Fashion">
+                <h3>Vintage & Retro</h3>
+                <p>Classics from the 70s, 80s, and 90s reimagined</p>
+                <a href="#" class="category-btn" data-category="vintage">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/streetwear.jpg" alt="Streetwear Fashion">
+                <h3>Streetwear</h3>
+                <p>Urban-inspired style with graphic tees and statement pieces</p>
+                <a href="#" class="category-btn" data-category="streetwear">Explore</a>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="images/gender-neutral.jpg" alt="Gender-Neutral Fashion">
+                <h3>Gender-Neutral</h3>
+                <p>Inclusive styles that transcend traditional fashion norms</p>
+                <a href="#" class="category-btn" data-category="gender-neutral">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/diy.jpg" alt="DIY and Custom Fashion">
+                <h3>DIY & Customization</h3>
+                <p>Personalized clothing with unique elements and designs</p>
+                <a href="#" class="category-btn" data-category="diy">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending-products" id="trending">
+        <h2 class="section-title">Trending Now</h2>
+        <div class="product-container">
+            <!-- Products will be loaded dynamically from product.js -->
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="benefit-container">
+            <div class="benefit-card">
+                <i class="fas fa-truck"></i>
+                <h3>Free Shipping</h3>
+                <p>On all orders over $50</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-exchange-alt"></i>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Payments</h3>
+                <p>Safe & protected checkout</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-tags"></i>
+                <h3>Student Discounts</h3>
+                <p>10% off with valid ID</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About TmTrendz</h2>
+                <p>TmTrendz is your ultimate destination for teen fashion that's both trendy and affordable. We partner with independent designers and ethical suppliers to bring you the latest styles while supporting creative entrepreneurs.</p>
+                <p>Our dropshipping model means each purchase directly supports the original creators, ensuring fair compensation for their work while keeping prices reasonable for you.</p>
+                <p>Join our fashion community today and express your unique style while making a positive impact!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive deals and style tips</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Collections</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">How to Order</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Student Discount</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:hello@tmtrendz.com">hello@tmtrendz.com</a></li>
+                    <li><a href="tel:+1234567890">123-456-7890</a></li>
+                    <li class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TmTrendz. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">$0.00</span></p>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
